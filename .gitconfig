@@ -1,84 +1,72 @@
 [core]
-  excludesfile = ~/.gitignore
-  editor = vim
-  autocrlf = input
-#  safecrlf = warn
-  hideDotFiles = dotGitOnly
+	excludesfile = ~/.gitignore
+	editor = 'C:/DevStuff/Apps/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
+	autocrlf = true
+	safecrlf = warn
+	hideDotFiles = dotGitOnly
 [user]
-  name = Jason Karns
-  email = jason@karns.name
+	name = Jeff McKenzie
+	email = mail@mcknz.com
 [github]
-  user = jasonkarns
-#  token = {add github token here}
+	user = mcknz
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  cam = commit --amend -C HEAD
-  hist = log --graph --date=short --pretty=format:\"%C(yellow)%h%C(reset) %C(green)%ad%C(reset) %C(red)|%C(reset) %s%d %C(bold blue)%an%C(reset)\"
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	cam = commit --amend -C HEAD
+	hist = log --graph --date=short --pretty=format:\"%C(yellow)%h%C(reset) %C(green)%ad%C(reset) %C(red)|%C(reset) %s%d %C(bold blue)%an%C(reset)\"
   glog = log --graph --date=relative
-
-  diffstat = diff --stat
+	diffstat = diff --stat
   diffword = diff --word-diff
   chry = cherry-pick
-[format]
-  pretty=format:%C(yellow)%h%C(reset) -%C(red)%d%C(reset) %s %C(green)(%ar) %C(bold blue)%an%C(reset)
+	gka = 'gitk --all'
+	sr = svn rebase
+  ai = add -i
+	puom = push -u origin master
+  puow = push -u origin working
 [branch]
-  autosetuprebase = always
-#[branch "master"]
-#  remote = origin
-#  merge = refs/heads/master
-[advice]
-  statusHints = false
+	autosetuprebase = always
 [color]
-  ui = auto
-  branch = auto
-  diff = auto
-  status = auto
-  interactive = auto
-  showbranch = auto
+	ui = auto
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = auto
+	showbranch = auto
 [color "branch"]
-  current = reverse yellow
-  local = yellow
-  remote = green
-#  plain =
+	current = reverse yellow
+	local = yellow
+	remote = green
 [color "diff"]
-  meta = bold yellow
-  frag = bold magenta
-  old = bold red
-  new = bold green
-  plain = normal
-#  func = 
-#  commit = 
-  whitespace = reverse normal
+	meta = bold yellow
+	frag = bold magenta
+	old = bold red
+	new = bold green
+	plain = normal
+	whitespace = reverse normal
 [color "status"]
-  header = normal
-  added = yellow
-  changed = green
-  untracked = cyan
-  nobranch = red
+	header = normal
+	added = yellow
+	changed = green
+	untracked = cyan
+	nobranch = red
 [diff]
-  tool = bc3
-  wordRegex=[A-z0-9_]+|[^[:space:]]
+    tool = araxis
 [difftool]
-  prompt = false
+    tool = araxis
+    prompt = false
 [merge]
-  tool = bc3
-  defaultToUpstream = true
+	tool = winmerge
+	defaultToUpstream = true
 [push]
-  default = tracking
-[rerere]
-  enabled = 1
+	default = tracking
 
-[difftool "bc3"]
-  path = c:/program files/beyond compare 3/bcomp.exe
-[mergetool "bc3"]
-  path = c:/program files/beyond compare 3/bcomp.exe
-  trustExitCode = true
+[difftool "araxis"]
+    path = "C:\\Program Files\\Araxis\\Araxis Merge\\compare.exe"
 [difftool "winmerge"]
-  cmd = 'c:/program files/winmerge/winmergeu.exe' \"$LOCAL\" \"$REMOTE\"
+	cmd = 'c:/DevStuff/Apps/winmerge/winmergeu.exe' \"$LOCAL\" \"$REMOTE\"
 [mergetool "winmerge"]
-  cmd = 'c:/program files/winmerge/winmergeu.exe' \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-  trustExitCode = false
-
+	cmd = 'c:/DevStuff/Apps/winmerge/winmergeu.exe' \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    trustExitCode = false
+	
