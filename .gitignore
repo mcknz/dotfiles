@@ -1,21 +1,2 @@
-# to un-ignore specific files, use: !file.ext
-
-# temp
-.tmp_*~
-
-# ide files
-.metadata
-.project
-.idea
-
-# mac
-.DS_Store
-
-# windows
-Thumbs.db
-
-# subversion
-.svn
-
-# clearcase
-lost+found
+# moved to .gitignore_globals
+*
