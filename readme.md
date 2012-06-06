@@ -1,4 +1,4 @@
-Forked from jasonkarns/dotfiles, also used with msys/mingw.
+Forked from [jasonkarns/dotfiles](https://github.com/karns/dotfiles), also used with msys/mingw.
 
 Karns says:
 
