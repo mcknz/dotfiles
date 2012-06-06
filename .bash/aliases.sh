@@ -4,3 +4,5 @@ alias vdir='ls --color=auto --format=long'
 alias lsl='ls -l'                              # long list
 alias lsa='ls -A'                              # all but . and ..
 alias hgrep='history | grep'
+alias c3='cd /c/DevStuff/!Projects/github/cover-three-client'
+alias sv2='cd /c/sv2-git'
