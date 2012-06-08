@@ -1,4 +1,7 @@
 # moved to .gitignore_globals
 *
 !.*
-*.bash_history
+.bash_history
+.netbeans/
+.recently-used.xbel
+.recently-used.xbel.RKT5XV
