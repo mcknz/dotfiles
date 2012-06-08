@@ -1,5 +1,5 @@
 [core]
-  excludesfile = .gitignore_global
+  excludesfile = ~/.gitignore_globals
   editor = 'C:/DevStuff/Apps/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
   autocrlf = true
   safecrlf = warn
