@@ -2,6 +2,11 @@
 	<s:Boolean x:Key="/Default/CodeEditing/Intellisense/LookupWindow/ShowSignatures/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeEditing/TypingAssist/Asp/FormatOnClosingTag/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeEditing/TypingAssist/Asp/FormatOnEnter/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=masterPage_002A_002Ecss/@EntryIndexedValue">masterPage*.css</s:String>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=_002A_002Econfig/@EntryIndexedValue">*.config</s:String>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=_002A_002Edbml/@EntryIndexedValue">*.dbml</s:String>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=_002A_002Emaster/@EntryIndexedValue">*.master</s:String>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=_002A_002Esitemap/@EntryIndexedValue">*.sitemap</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=CheckNamespace/@EntryIndexedValue">HINT</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ClassCanBeSealed_002EGlobal/@EntryIndexedValue">HINT</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ClassCanBeSealed_002ELocal/@EntryIndexedValue">HINT</s:String>
@@ -54,6 +59,8 @@
 	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/VBFormat/WRAP_BEFORE_BINARY_OPSIGN/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/CodeStyle/CodeFormatting/VBFormat/WRAP_EXTENDS_LIST_STYLE/@EntryValue">CHOP_IF_LONG</s:String>
 	<s:String x:Key="/Default/CodeStyle/CodeFormatting/VBFormat/WRAP_PARAMETERS_STYLE/@EntryValue">CHOP_IF_LONG</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/XmlFormatter/BlankLineAfterProcessingInstructions/@EntryValue">False</s:Boolean>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/XmlFormatter/MaxBlankLines/@EntryValue">1</s:Int64>
 	<s:Boolean x:Key="/Default/CodeStyle/Generate/=Implementations/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/CodeStyle/Generate/=Implementations/Options/=PropertyBody/@EntryIndexedValue">Automatic property</s:String>
 	<s:String x:Key="/Default/CodeStyle/Generate/=Implementations/Options/=XmlDocumentation/@EntryIndexedValue">False</s:String>
@@ -77,7 +84,7 @@
 	<s:Boolean x:Key="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/IntellisenseHousekeeping/HintUsed/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OptionsDialog/Position/@EntryValue">[29.5,-22.5](1111,823)</s:String>
-	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OptionsDialog/SelectedPageId/@EntryValue">VBLineBreaksPage</s:String>
+	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OptionsDialog/SelectedPageId/@EntryValue">JavaScriptOthersPage</s:String>
 	<s:Boolean x:Key="/Default/Housekeeping/LiveTemplatesHousekeeping/HotspotSessionHintIsShown/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/Housekeeping/SubmitToTrackerExceptionReportService/Password/@EntryValue">E.162YgzvLmvUXJgdnNvaG8w==</s:String>
 	<s:String x:Key="/Default/Housekeeping/SubmitToTrackerExceptionReportService/Username/@EntryValue">mcknz</s:String>
@@ -118,7 +125,9 @@
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=00E14B3718FE0F42920DC480FBD58483/Text/@EntryValue">Protected Property $Name$() As Integer</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0D7D5B2ABC343745A50AB2E94D885702/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0D7D5B2ABC343745A50AB2E94D885702/Field/=NAMESPACE/@KeyIndexDefined">False</s:Boolean>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0D7D5B2ABC343745A50AB2E94D885702/Text/@EntryValue">Option Strict On&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0D7D5B2ABC343745A50AB2E94D885702/Text/@EntryValue">Option Explicit On&#xD;
+Option Strict On&#xD;
+Option Infer Off&#xD;
 &#xD;
 Public Module $MODULE$ &#xD;
   $END$&#xD;
@@ -148,14 +157,17 @@ End Property&#xD;
 </s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1C549978970E7046803404BCC3B1FF03/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1C549978970E7046803404BCC3B1FF03/Field/=NAMESPACE/@KeyIndexDefined">False</s:Boolean>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1C549978970E7046803404BCC3B1FF03/Text/@EntryValue">Option Strict On&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1C549978970E7046803404BCC3B1FF03/Text/@EntryValue">Option Explicit On&#xD;
+Option Strict On&#xD;
+Option Infer Off&#xD;
 &#xD;
 Public Enum $ENUM$ &#xD;
   $END$&#xD;
 End Enum</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2C1EEEB18E92DD4397A72CD7E208D02E/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2C1EEEB18E92DD4397A72CD7E208D02E/Field/=NAMESPACE/@KeyIndexDefined">False</s:Boolean>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2C1EEEB18E92DD4397A72CD7E208D02E/Text/@EntryValue">Option Strict On&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2C1EEEB18E92DD4397A72CD7E208D02E/Text/@EntryValue">Option Explicit On&#xD;
+Option Strict On&#xD;
 Option Infer Off&#xD;
 &#xD;
 Namespace x&#xD;
@@ -165,14 +177,18 @@ Namespace x&#xD;
 End Namespace</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=58E2763A66E7F640A09300C04F653A65/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=58E2763A66E7F640A09300C04F653A65/Field/=NAMESPACE/@KeyIndexDefined">False</s:Boolean>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=58E2763A66E7F640A09300C04F653A65/Text/@EntryValue">Option Strict On&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=58E2763A66E7F640A09300C04F653A65/Text/@EntryValue">Option Explicit On&#xD;
+Option Strict On&#xD;
+Option Infer Off&#xD;
 &#xD;
 Public Structure $STRUCTURE$ &#xD;
   $END$&#xD;
 End Structure</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6F997A79EF978847A0A60EB6E4F7E99E/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6F997A79EF978847A0A60EB6E4F7E99E/Field/=NAMESPACE/@KeyIndexDefined">False</s:Boolean>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6F997A79EF978847A0A60EB6E4F7E99E/Text/@EntryValue">Option Strict On&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6F997A79EF978847A0A60EB6E4F7E99E/Text/@EntryValue">Option Explicit On&#xD;
+Option Strict On&#xD;
+Option Infer Off&#xD;
 &#xD;
 Namespace x&#xD;
 	Public Interface $INTERFACE$ &#xD;
