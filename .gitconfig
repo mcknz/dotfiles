@@ -1,7 +1,7 @@
 [core]
   excludesfile = ~/.gitignore_globals
   editor = 'C:/DevStuff/Apps/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
-  autocrlf = true
+  autocrlf = false
   safecrlf = warn
   hideDotFiles = dotGitOnly
 [user]
