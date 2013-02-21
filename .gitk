@@ -8,6 +8,7 @@ set maxwidth 16
 set cmitmode patch
 set wrapcomment none
 set autoselect 1
+set autosellen 40
 set showneartags 1
 set hideremotes 0
 set showlocalchanges 1
@@ -24,11 +25,11 @@ set diffcontext 3
 set selectbgcolor SystemHighlight
 set extdifftool meld
 set perfile_attrs 0
-set geometry(main) 1138x647+175+175
+set geometry(main) 1138x647+25+25
 set geometry(state) normal
 set geometry(topwidth) 1138
 set geometry(topheight) 225
-set geometry(pwsash0) "509 1"
+set geometry(pwsash0) "503 1"
 set geometry(pwsash1) "1008 1"
 set geometry(botwidth) 606
 set geometry(botheight) 417

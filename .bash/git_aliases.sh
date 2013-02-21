@@ -1,20 +1,17 @@
-#!bash
+#!/bin/bash
 
 gmsqparam()
 {
-git merge "$1" --squash
+	git merge "$1" --squash
 }
 
 gfresh()
 {
-	if [ "$1" = "" ]
-	then echo "need branch name"
-	else
-		git checkout master
-		git tf pull --rebase
-		git checkout "$1"
-		git rebase master
-	fi
+	current_branch_name="$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f 3)"
+	git checkout master
+	git tf pull --deep --rebase
+	git checkout $current_branch_name
+	git rebase master
 }
 
 alias gs='git status'
@@ -36,11 +33,14 @@ alias gmsq=gmsqparam
 alias go='git checkout'
 alias gom='git checkout master'
 alias grbm='git rebase master'
+alias grba='git rebase --abort'
+alias grbc='git rebase --continue'
+alias grbs='git rebase --skip'
 alias gsp='git stash pop'
 alias gss='git stash show'
 alias gst='git stash'
-alias gtfco='git tf checkin --no-lock'
-alias gtfpl='git checkout master;git tf pull --rebase'
+alias gtfco='git tf checkin --deep'
+alias gtfpl='git checkout master;git tf pull --deep --rebase'
 alias gx='gitx --all'
 
 

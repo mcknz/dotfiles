@@ -32,6 +32,8 @@ Ankh.NoLoad
 *.vsmdi
 *.moles
 *.fakes
+*.dbmdl
+*.dbproj.schemaview
 
 #Tooling
 _ReSharper*/
@@ -54,3 +56,6 @@ FakesAssemblies*/
 
 #WinMerge backups
 *.orig
+
+#WinMerge compare files
+*.WinMerge
