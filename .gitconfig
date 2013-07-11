@@ -71,5 +71,3 @@
 	cmd = 'c:/DevStuff/Apps/winmerge/winmergeu.exe' \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 	trustExitCode = false
 	path = c:/DevStuff/Apps/winmerge/winmergeu.exe
-[credential]
-	helper = !\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\"
