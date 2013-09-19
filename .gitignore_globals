@@ -52,7 +52,7 @@ FakesAssemblies*/
 ~WR*.tmp
 
 #WebStorm IDE
-.idea/
+.idea/workspace.xml
 
 #WinMerge backups
 *.orig
