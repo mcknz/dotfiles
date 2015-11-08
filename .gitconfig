@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore_globals
-	editor = 'C:/DevStuff/Apps/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
 	autocrlf = false
 	safecrlf = warn
 	hideDotFiles = dotGitOnly
@@ -55,19 +55,19 @@
 	tool = winmerge
 	guitool = winmerge
 [difftool]
-	tool = araxis
+	tool = winmerge
 	prompt = false
 [merge]
 	tool = winmerge
 	defaultToUpstream = true
 [push]
 	default = tracking
-[difftool "araxis"]
-	path = "C:\\Program Files\\Araxis\\Araxis Merge\\compare.exe"
 [difftool "winmerge"]
-	cmd = \"c:/DevStuff/Apps/winmerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
-	path = c:/DevStuff/Apps/winmerge/winmergeu.exe
+	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' -e -u \"$LOCAL\" \"$REMOTE\"
+	path = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe'
 [mergetool "winmerge"]
-	cmd = 'c:/DevStuff/Apps/winmerge/winmergeu.exe' \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 	trustExitCode = false
-	path = c:/DevStuff/Apps/winmerge/winmergeu.exe
+	path = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe'
+[credential]
+	helper = !'C:/Users/jmckenzie/AppData/Roaming/GitCredStore/git-credential-winstore.exe'
