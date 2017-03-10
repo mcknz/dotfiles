@@ -1,9 +1,11 @@
 [core]
+	symlinks = false
 	excludesfile = ~/.gitignore_globals
 	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
 	autocrlf = false
 	safecrlf = warn
 	hideDotFiles = dotGitOnly
+	fscache = true
 [user]
 	name = Jeff McKenzie
 	email = mail@mcknz.com
@@ -57,17 +59,27 @@
 [difftool]
 	tool = winmerge
 	prompt = false
-[merge]
-	tool = winmerge
-	defaultToUpstream = true
-[push]
-	default = tracking
 [difftool "winmerge"]
 	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' -e -u \"$LOCAL\" \"$REMOTE\"
 	path = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe'
+[diff "astextplain"]
+	textconv = astextplain
+[help]
+	format = html
+[merge]
+	tool = winmerge
+	defaultToUpstream = true
 [mergetool "winmerge"]
 	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 	trustExitCode = false
 	path = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe'
 [credential]
 	helper = !'C:/Users/jmckenzie/AppData/Roaming/GitCredStore/git-credential-winstore.exe'
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[http]
+	sslCAInfo = C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+[diff "astextplain"]
+	textconv = astextplain
