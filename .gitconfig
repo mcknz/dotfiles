@@ -74,7 +74,7 @@
 	trustExitCode = false
 	path = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe'
 [credential]
-	helper = !'C:/Users/jmckenzie/AppData/Roaming/GitCredStore/git-credential-winstore.exe'
+	helper = !'C:/Program Files/Git/mingw64/libexec/git-core/git-credential-manager.exe'
 [push]
 	default = simple
 [rebase]
