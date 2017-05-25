@@ -22,6 +22,7 @@ alias gsp='git stash pop'
 alias gss='git stash show'
 alias gst='git stash'
 alias gx='gitx --all'
+alias gp='git push'
 
 
 
