@@ -7,6 +7,9 @@
 # git aliases
 [[ -s ~/.bash/git_aliases.sh ]] && source ~/.bash/git_aliases.sh
 
+# docker aliases
+[[ -s ~/.bash/docker_aliases.sh ]] && source ~/.bash/docker_aliases.sh
+
 # angular autocomplete
 [[ -s ~/.bash/angular_cli_autocomplete.sh ]] && source ~/.bash/angular_cli_autocomplete.sh
 
