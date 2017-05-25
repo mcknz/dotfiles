@@ -7,6 +7,9 @@
 # git aliases
 [[ -s ~/.bash/git_aliases.sh ]] && source ~/.bash/git_aliases.sh
 
+# git alias autocomplete
+[[ -s ~/.bash/git_completion.sh ]] && source ~/.bash/git_completion.sh
+
 # docker aliases
 [[ -s ~/.bash/docker_aliases.sh ]] && source ~/.bash/docker_aliases.sh
 
