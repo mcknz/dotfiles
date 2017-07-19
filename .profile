@@ -17,3 +17,4 @@
 [[ -s ~/.bash/angular_cli_autocomplete.sh ]] && source ~/.bash/angular_cli_autocomplete.sh
 
 export ANSI_COLOR=true;
+PROMPT_COMMAND='history -a'
