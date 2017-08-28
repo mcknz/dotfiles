@@ -1,3 +1,4 @@
 # moved to .gitignore_globals
 .bash_history
 .ssh/
+.lesshst
