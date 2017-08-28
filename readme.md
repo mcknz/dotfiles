@@ -1,3 +1,12 @@
+Windows setup:
+
+Set HOME environment variable to dotfiles location.
+Optional installation of unix tools to \Git\mingw64\bin under Git for Windows:
+1. Download nano from https://www.nano-editor.org/dist/win32-support/
+2. Download wget from https://eternallybored.org/misc/wget/
+
+==========
+
 Forked from [jasonkarns/dotfiles](https://github.com/jasonkarns/dotfiles), also used with msys/mingw.
 
 Karns says:
