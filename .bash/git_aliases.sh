@@ -34,10 +34,5 @@ alias gst='git stash'
 alias gx='gitx --all'
 alias god='git checkout develop'
 alias ggod='git pull origin develop'
-
-
-
-
-
-
-
+alias godj='git checkout develop_java8'
+alias ggodj='git pull origin develop_java8'
