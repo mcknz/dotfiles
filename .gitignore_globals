@@ -246,3 +246,9 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+.bash_history
+.ssh/
+.lesshst
+.gem
+.gradle
