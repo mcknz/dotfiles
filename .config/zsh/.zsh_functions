@@ -1,0 +1,19 @@
+function fc () {
+  makediagram 'facilities' 'bounded-context'
+}
+
+function cc () {
+  makediagram 'construction' 'bounded-context'
+}
+
+function er () {
+  makediagram 'cross-functional' 'entity-relationship'
+}
+
+function makediagram () {
+  division=$1
+  type=$2
+  timestamp=$(date +%s)
+  docker run --rm -v //c/projects/clients/pvc/phase1a/diagrams/${division}/${type}:/data minlag/mermaid-cli:10.9.1 -i ${division}-${type}.mmd -o ${division}-${type}_${timestamp}.svg
+  chrome --new-window /c/projects/clients/pvc/phase1a/diagrams/${division}/${type}/${division}-${type}_${timestamp}.svg
+}

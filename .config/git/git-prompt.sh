@@ -1,0 +1,1 @@
+# https://gist.github.com/glenkusuma/7d7df65a89e485ec2f4690fdc88fffd6#6-configure-git-promptsh
