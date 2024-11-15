@@ -94,8 +94,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
+# Rebuild the cache of executable commands
+# https://unix.stackexchange.com/a/2180
+zstyle ":completion:*:commands" rehash 1
+
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -169,3 +173,7 @@ source $ZSH/oh-my-zsh.sh
 # Adds separate zsh files
 . $ZSH_CONFIG/.zsh_aliases
 . $ZSH_CONFIG/.zsh_functions
+
+# Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
