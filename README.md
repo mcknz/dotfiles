@@ -25,3 +25,5 @@
     - https://github.com/romkatv/powerlevel10k/tree/master?tab=readme-ov-file#getting-started
 - nvm
     - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+- azure cli
+    - https://winget.run/pkg/Microsoft/AzureCLI
