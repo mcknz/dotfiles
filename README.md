@@ -13,6 +13,7 @@
 - Power Toys
     - https://learn.microsoft.com/en-us/windows/powertoys/install
 - Docker Desktop \ Podman
+- PowerShell 7
 - RapidEE
 - git-sdk-64
     - https://github.com/git-for-windows/git/wiki/Technical-overview
@@ -23,7 +24,9 @@
     - https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation
 - powerlevel10k (omz theme)
     - https://github.com/romkatv/powerlevel10k/tree/master?tab=readme-ov-file#getting-started
-- nvm
-    - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+- nvm/node
+    - https://github.com/lukechilds/zsh-nvm?tab=readme-ov-file#install
+    - angular cli
 - azure cli
     - https://winget.run/pkg/Microsoft/AzureCLI
+ 

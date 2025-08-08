@@ -34,6 +34,9 @@ else
   start_ssh_agent;
 fi
 
+# Uncomment to capture profiling data
+# zmodload zsh/zprof
+
 #----------------------------
 # Start OH-MY-ZSH
 #----------------------------
@@ -51,9 +54,14 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Add git and git-tfs to path
+# Add git-tfs to path
 export PATH=$PATH:"/c/GitTfs-0.34.0"
-export PATH=$PATH:"/c/git-sdk-64/mingw64/bin"
+
+# Add terraform to path
+export PATH=$PATH:"/c/Program Files/Terraform"
+
+# Add npm to path
+export PATH=$PATH:"~/AppData/Roaming/npm"
 
 # Add chrome to path
 export PATH=$PATH:"/c/Program Files/Google/Chrome/Application"
@@ -89,7 +97,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -129,15 +137,18 @@ DISABLE_MAGIC_FUNCTIONS="true"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+# speeds up prompt load: https://github.com/ohmyzsh/ohmyzsh/wiki/Settings#zsh_disable_compfix
+ZSH_DISABLE_COMPFIX=true
+
+# https://github.com/lukechilds/zsh-nvm?tab=readme-ov-file#lazy-loading
+export NVM_LAZY_LOAD=true
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -172,8 +183,18 @@ source $ZSH/oh-my-zsh.sh
 #
 # Adds separate zsh files
 . $ZSH_CONFIG/.zsh_aliases
+. $ZSH_CONFIG/.zsh_aliases_private
 . $ZSH_CONFIG/.zsh_functions
+. $ZSH_CONFIG/.zsh_functions_private
 
-# Node Version Manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# Load bash completion functions
+autoload -Uz +X bashcompinit && bashcompinit
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Load Terraform autocompletion
+complete -o nospace -C C:\Program Files\Terraform\terraform.exe terraform.exe
+
+# Uncomment to display profiling data
+# zprof
