@@ -4,6 +4,9 @@ export CONFIG="$HOME/.config"
 #Set location of custom ZSH config directory
 export ZSH_CONFIG=$CONFIG/zsh
 
+# Prevent MSYS/Git Bash from rewriting container paths (e.g., /workflows -> C:/...)
+export MSYS2_ARG_CONV_EXCL="*"
+
 #----------------------------
 # Start SSH Agent
 #----------------------------
@@ -23,6 +26,7 @@ function start_ssh_agent {
   run_ssh_env;
 
   ssh-add ~/.ssh/id_rsa;
+  ssh-add ~/.ssh/id_rsa_mcknz76;
 }
 
 if [ -f "${SSH_ENV}" ]; then
