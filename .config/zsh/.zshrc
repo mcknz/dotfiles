@@ -26,7 +26,6 @@ function start_ssh_agent {
   run_ssh_env;
 
   ssh-add ~/.ssh/id_rsa;
-  ssh-add ~/.ssh/id_rsa_mcknz76;
 }
 
 if [ -f "${SSH_ENV}" ]; then
@@ -58,8 +57,8 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Add git-tfs to path
-export PATH=$PATH:"/c/GitTfs-0.34.0"
+# Add Notepad++ to path
+export PATH=$PATH:"/c/Program Files/Notepad++"
 
 # Add terraform to path
 export PATH=$PATH:"/c/Program Files/Terraform"
