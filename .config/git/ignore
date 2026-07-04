@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/settings.json
+
+# Vim
+*.swp
+*.swo
+
+# JetBrains
+.idea/workspace.xml
+.idea/tasks.xml

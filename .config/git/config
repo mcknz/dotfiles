@@ -1,0 +1,36 @@
+[user]
+    name = Jeff McKenzie
+    email = mail@mcknz.com
+
+[init]
+    defaultBranch = main
+
+[core]
+    autocrlf = input
+    excludesfile = ~/.config/git/ignore
+
+[fetch]
+    prune = true
+
+[pull]
+    rebase = false
+
+[push]
+    autoSetupRemote = true
+
+[rerere]
+    enabled = true
+    
+[diff]
+    tool = winmerge
+
+[difftool "winmerge"]
+    cmd = "\"$HOME/AppData/Local/Programs/WinMerge/WinMergeU.exe\" -e -u \"$LOCAL\" \"$REMOTE\""
+
+[merge]
+    tool = winmerge
+    conflictstyle = zdiff3
+
+[mergetool "winmerge"]
+    cmd = "\"$HOME/AppData/Local/Programs/WinMerge/WinMergeU.exe\" -e -u \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\""
+    trustExitCode = true
