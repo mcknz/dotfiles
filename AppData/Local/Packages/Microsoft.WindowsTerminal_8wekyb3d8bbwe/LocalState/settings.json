@@ -4,7 +4,7 @@
     "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{3f5ffeb6-cd4e-45e6-9ff2-ef017d8e5ced}",
     "keybindings": 
     [
         {
@@ -32,34 +32,57 @@
         "list": 
         [
             {
-				"adjustIndistinguishableColors": "indexed",
-				"altGrAliasing": true,
-				"antialiasingMode": "grayscale",
-				"closeOnExit": "automatic",
-				"colorScheme": "Solarized Dark",
-				"commandline": "%SystemDrive%\\git-sdk-64\\usr\\bin\\zsh.exe -li",
-				"cursorShape": "bar",
-				"elevate": false,
-				"experimental.retroTerminalEffect": false,
-				"font":
-				{
-				    "face": "MesloLGS NF",
-				    "size": 12
-				},
-				"guid": "{3f5ffeb6-cd4e-45e6-9ff2-ef017d8e5ced}",
-				"hidden": false,
-				"historySize": 9001,
-				"icon": "%SystemDrive%\\git-sdk-64\\git-bash.exe",
-				"intenseTextStyle": "all",
-				"name": "Git SDK zsh",
-				"opacity": 100,
-				"padding": "8, 8, 8, 8",
-				"snapOnInput": true,
-				"startingDirectory": "%USERPROFILE%",
-				"tabTitle": "Git SDK zsh",
-				"useAcrylic": false
-				},
-				{
+                "adjustIndistinguishableColors": "indexed",
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Solarized Dark",
+                "commandline": "%SystemDrive%\\git-sdk-64\\usr\\bin\\zsh.exe -li",
+                "cursorShape": "bar",
+                "elevate": false,
+                "experimental.retroTerminalEffect": false,
+                "font": 
+                {
+                    "face": "MesloLGS NF",
+                    "size": 12
+                },
+                "guid": "{3f5ffeb6-cd4e-45e6-9ff2-ef017d8e5ced}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "%SystemDrive%\\git-sdk-64\\git-bash.exe",
+                "intenseTextStyle": "all",
+                "name": "Git SDK zsh",
+                "opacity": 100,
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "Git SDK zsh",
+                "useAcrylic": false
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "MesloLGS NF",
+                    "size": 12
+                },
+                "guid": "{c94b1468-b857-46c7-b6bd-70c0262e5e7a}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "%USERPROFILE%\\.config\\assets\\icons\\Square150x150Logo-Preview.png",
+                "name": "PowerShell 7",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "PS 7",
+                "useAcrylic": false
+            },
+            {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
@@ -76,6 +99,12 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
