@@ -1,0 +1,12 @@
+{
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "terminal.integrated.profiles.windows": {
+        "Git SDK zsh": {
+            "path": "C:\\git-sdk-64\\usr\\bin\\zsh.exe",
+            "args": ["-li"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git SDK zsh",
+    "terminal.integrated.fontFamily": "MesloLGS NF"
+}
