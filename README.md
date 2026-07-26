@@ -36,11 +36,15 @@ Configuration is stored under `.config` where practical. Applications that requi
       - LF line endings
       - Git SDK zsh (`zsh.exe -li`) as default integrated terminal
       - MesloLGS NF terminal font
+    - `.config/vscode/extensions.txt`
+      - host-level extensions required by the workstation
+    - `.config/vscode/install-extensions.sh`
+      - installs the declared host extensions
   - not tracked:
     - `globalStorage/` and other application state
   - extensions
-    - install as needed
-    - prefer project/devcontainer-specific extensions where appropriate
+    - add host extensions to extensions.txt
+    - add project/devcontainer-specific extensions where appropriate
   - Git/GitHub
     - command-line Git uses SSH independently of VS Code
     - VS Code GitHub sign-in is not required for normal Git operations
